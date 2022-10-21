@@ -1,51 +1,22 @@
 import * as React from 'react';
-import {Text, ScrollView, Linking, StyleSheet } from 'react-native';
+import {Text, ScrollView, Linking, StyleSheet, Button } from 'react-native';
+import {ISTEKHARA_DATA, ISTEKHARA_DATA_LINK} from '../ScreensData/Data';
 
 
-export function HomeScreen() {
+export function HomeScreen({navigation}) {
     return (
       <ScrollView>
-        <Text style={styles.container}>
-                جادو سے حفاظت کے اذکار
-        گھر سے نکلتے وقت کی دعا:
-        بِسْمِ اللّٰهِ، تَوَكَّلْتُ عَلَى اللّٰهِ، لَا حَوْلَ وَلَا قُوَّةَ اِلَّا بِاللّٰه
-        اللہ کے نام کے ساتھ میں نے اللہ پر بھروسہ کیا اور اللہ
-        کی توفیق و مدد کے بغیر کسی گناہ سے بچنے کی
-        طاقت اور کوئی نیکی کرنے کی قوت نہیں۔
-        سنن ابی داؤد:5095، سنن ترمذی:3426)
-
-        گھر میں داخل ہوتے وقت کی دعا
-        بِسْمِ اللّٰهِ وَلَجْنَا، وَبِسْمِ اللّٰهِ خَرَجْنَا، وَعَلَى اللّٰهِ رَبَّنَا تَوَكَّلْنَا
-        اللہ کے نام کے ساتھ ہم داخل ہوئے اور اللہ کے نام کے
-        ساتھ ہی ہم باہر نکلے اور ہم نے اپنے پروردگار اللہ ہی
-        پر بھروسہ کیا۔
-        سنن ابی داؤد:5096
-
-        (2) واش روم میں داخل ہونے اور باہر نکلنے کی دعا
-        داخل ہونے کی دعا:
-        اَللّٰهُمَّ اِنِّيْ أَعُوْذُ بِك مِنَ الْخُبُثِ وَالْخَبَائِثِ
-        اے اللہ میں خبیث جنوں اور خبیث جننیوںسے تیری پناہ
-        میں آتا ہوں۔
-        (صحیح بخاری:142)
-        نکلنے کی دعا:
-        غُفْرَانَك
-        اے اللہ میں تیری پناہ میں آتا ہوں۔
-        (سنن ترمذی:7)
-        (3) صبح و شام کے اذکار +پانچوں نمازوں کی مکمل
-        پابندی
-        (4) سورۃ البقرۃ کی آخری دو آیات
-        (5) آیۃ الکرسی
-        (6)آخری 3 قل
-
-        یہ عمل کرنے والے انسان پر کبھی جادو نہیں ہو سکتا۔
-        اس کی مزید تفصیل جانے کے لئے ہمارے یوٹیوب
-        چینل کی اس ویڈیو لنک کو دیکھیں
-        {"\n"}
-        <Text style={{color: 'blue'}}
-            onPress={() => Linking.openURL('https://youtu.be/ZajCMrCUZaU')}>
-          https://youtu.be/ZajCMrCUZaU
+        <Text style={styles.container}> 
+          {ISTEKHARA_DATA}          
+          {"\n"}
+          <Text style={{color: 'blue'}} onPress={() => Linking.openURL(ISTEKHARA_DATA_LINK)}>
+            {ISTEKHARA_DATA_LINK}
+          </Text>
         </Text>
-        </Text>
+        <Button
+          title="Go to Details"
+          onPress={() => navigation.navigate('Details')}
+        />
       </ScrollView>
     );
   }
