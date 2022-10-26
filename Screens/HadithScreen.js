@@ -1,10 +1,34 @@
 import * as React from 'react';
-import {Text, View } from 'react-native';
+import {Text, TouchableOpacity, View } from 'react-native';
+import {styles} from '../Styles'
 
-export function HadithScreen() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Hadith!</Text>
+export function HadithScreen({navigation}) {
+  return (
+    <View>
+      <View style={styles.container2}>
+        <TouchableOpacity 
+          style={styles.button2}
+          onPress={() => navigation.navigate('Details')}>
+          <Text style={styles.button2Text}>Jinnat Ka Zikr</Text>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={styles.button2}
+          onPress={() => navigation.navigate('Details')}>
+          <Text style={styles.button2Text}>Jaadu Ka Zikr</Text>
+        </TouchableOpacity>
       </View>
-    );
-  }
+      <View style={styles.container2}>
+        <TouchableOpacity 
+          style={styles.button2}
+          onPress={() => navigation.navigate('Details')}>
+          <Text style={styles.button2Text}>Hadith Recording Link</Text>
+        </TouchableOpacity>
+        <TouchableOpacity 
+          style={styles.button2}
+          onPress={() => navigation.navigate('Details')}>
+          <Text style={styles.button2Text}>Hadith Book</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+}
