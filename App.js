@@ -8,6 +8,7 @@ import { HomeScreen } from './Screens/HomeScreen';
 import { AboutUsScreen } from './Screens/AboutUsScreen';
 import { QuranSikhiyeScreen } from './Screens/QuranSikhiyeScreen';
 import { DetailsScreen } from './Screens/DetailsScreen';
+import { KhawabScreen } from './Screens/KhawabScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -19,6 +20,7 @@ export default function App() {
         <Stack.Screen name="NavBar" component={HomeTabs}/>
         <Stack.Screen name="Details" component={DetailsScreen} />
         <Stack.Screen name="Quran Sikhiye Screen" component={QuranSikhiyeScreen} />
+        <Stack.Screen name="Khawab Screen" component={KhawabScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

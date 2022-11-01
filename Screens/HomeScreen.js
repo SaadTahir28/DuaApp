@@ -13,7 +13,7 @@ import {styles} from '../Styles'
         <View style={styles.container2}>
           <TouchableOpacity 
             style={styles.button2}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Khawab Screen')}>
             <Text style={styles.button2Text}>Khawab</Text>
           </TouchableOpacity>
           <TouchableOpacity 
