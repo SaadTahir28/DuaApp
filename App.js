@@ -9,6 +9,10 @@ import { AboutUsScreen } from './Screens/AboutUsScreen';
 import { QuranSikhiyeScreen } from './Screens/QuranSikhiyeScreen';
 import { DetailsScreen } from './Screens/DetailsScreen';
 import { KhawabScreen } from './Screens/KhawabScreen';
+import { JadduScreen } from './Screens/JadduScreen';
+import { IstekharaScreen } from './Screens/IstekharaScreen';
+import { AnbiaDuaScreen } from './Screens/AnbiaDuaScreen';
+import { NazarScreen } from './Screens/NazarScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -21,6 +25,10 @@ export default function App() {
         <Stack.Screen name="Details" component={DetailsScreen} />
         <Stack.Screen name="Quran Sikhiye Screen" component={QuranSikhiyeScreen} />
         <Stack.Screen name="Khawab Screen" component={KhawabScreen} />
+        <Stack.Screen name="Jaddu Screen" component={JadduScreen} />
+        <Stack.Screen name="Istekhara Screen" component={IstekharaScreen} />
+        <Stack.Screen name="Anbia Dua Screen" component={AnbiaDuaScreen} />
+        <Stack.Screen name="Nazar Screen" component={NazarScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

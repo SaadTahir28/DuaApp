@@ -17,5 +17,9 @@ export const aulad_ki_bandish = `
 حصوں میں بھی تقسیم کیا جا سکتا ہے ۔
  مرتبہ سنیں جواس 1اس کے ساتھ یہ رقیہ بھی روزانہ
 ویڈیو لنک میں موجود ہے۔
-https://youtu.be/j3asGdKqOIkاس کی مزید تفصیل کے لئے اس ویڈیو کو دیکھیں
+
+https://youtu.be/j3asGdKqOIk
+
+اس کی مزید تفصیل کے لئے اس ویڈیو کو دیکھیں
+
 https://youtu.be/krna1jWsyzQ`

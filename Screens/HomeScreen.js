@@ -7,7 +7,7 @@ import {styles} from '../Styles'
       <View>
         <TouchableOpacity 
           style={styles.button1}
-          onPress={() => navigation.navigate('Details')}>
+          onPress={() => navigation.navigate('Jaddu Screen')}>
           <Text style={styles.button1Text}>Jaadu</Text>
         </TouchableOpacity>
         <View style={styles.container2}>
@@ -25,7 +25,7 @@ import {styles} from '../Styles'
         <View style={styles.container2}>
           <TouchableOpacity 
             style={styles.button2}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Istekhara Screen')}>
             <Text style={styles.button2Text}>Istekhara</Text>
           </TouchableOpacity>
           <TouchableOpacity 
@@ -37,7 +37,7 @@ import {styles} from '../Styles'
         <View style={styles.container2}>
           <TouchableOpacity 
             style={styles.button2}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Nazar Screen')}>
             <Text style={styles.button2Text}>Nazar</Text>
           </TouchableOpacity>
           <TouchableOpacity 
