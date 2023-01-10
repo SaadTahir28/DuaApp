@@ -9,24 +9,24 @@ export function HadithScreen({navigation}) {
         <TouchableOpacity 
           style={styles.button2}
           onPress={() => navigation.navigate('Details')}>
-          <Text style={styles.button2Text}>Jinnat Ka Zikr</Text>
+          <Text style={styles.button2Text}>جنات کا ذکر</Text>
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.button2}
           onPress={() => navigation.navigate('Details')}>
-          <Text style={styles.button2Text}>Jaadu Ka Zikr</Text>
+          <Text style={styles.button2Text}>جادو کا ذکر</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.container2}>
         <TouchableOpacity 
           style={styles.button2}
           onPress={() => navigation.navigate('Details')}>
-          <Text style={styles.button2Text}>Hadith Recording Link</Text>
+          <Text style={styles.button2Text}>حدیث ریکارڈنگ کا لنک</Text>
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.button2}
           onPress={() => navigation.navigate('Details')}>
-          <Text style={styles.button2Text}>Hadith Book</Text>
+          <Text style={styles.button2Text}>حدیث کی کتاب</Text>
         </TouchableOpacity>
       </View>
     </View>

@@ -18,13 +18,16 @@ export function KhawabScreen() {
     );
 
     return (
-        <ScrollView>
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', margin: 20, }}>
-                <Text>{Kh_Data}</Text>
-            </View>
-            <View style={{margin: 20, }}>
-                {mappedData}
-            </View>
-        </ScrollView>
+        <View>
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', margin: 20 }}/>
+            <ScrollView style={{ padding: 20 }}>
+                <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+                    <Text>{Kh_Data}</Text>
+                </View>
+                <View style={{margin: 20}}>
+                    {mappedData}
+                </View>
+            </ScrollView>
+        </View>
     );
   }

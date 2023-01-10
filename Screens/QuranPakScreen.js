@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ScrollView, View, Text, Linking} from 'react-native';
 import { QP_DATA } from '../ScreensData/QURAN_PAK_DATA';
 
-export function QuranSikhiyeScreen() {
+export function QuranPakScreen() {
     const mappedData = QP_DATA.QP_DATA.map((data) => 
         <View key={data.name} style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text>{data.name}</Text>
@@ -14,8 +14,11 @@ export function QuranSikhiyeScreen() {
     );
 
     return (
-        <ScrollView>
-            {mappedData}
-        </ScrollView>
+        <View>
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', margin: 20 }}/>
+            <ScrollView style={{ padding: 20 }}>
+                {mappedData}
+            </ScrollView>
+        </View>
     );
 }

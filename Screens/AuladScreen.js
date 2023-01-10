@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {Text, View, ScrollView } from 'react-native';
 import { Linking } from 'react-native';
-import { nazar_band_ka_ilaj } from '../ScreensData/NAZAR_BAND_KA_ILAJ';
+import { aulad_ki_bandish } from '../ScreensData/AULAD_KI_BANDISH';
 
-export const NazarScreen = () => {
+export const AuladScreen = () => {
   const linkify = (text) => {
     const regex = /(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})/g;
     const matches = text.match(regex);
@@ -15,7 +15,7 @@ export const NazarScreen = () => {
     return text;
   }
   
-  const html = linkify(nazar_band_ka_ilaj);
+  const html = linkify(aulad_ki_bandish);
   
   return (
     <View>
