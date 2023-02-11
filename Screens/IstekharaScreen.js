@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Text, View, ScrollView } from 'react-native';
 import { Linking } from 'react-native';
-import { ISTEKHARA_DATA } from '../ScreensData/DATA';
+import { ISTEKHARA_DATA } from '../ScreensData/Data';
 
 export const IstekharaScreen = ({ text }) => {
   const linkify = (text) => {

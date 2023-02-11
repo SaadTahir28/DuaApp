@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Text, ScrollView, View } from 'react-native';
 import { Linking } from 'react-native';
-import { ANBIA_KI_DUAEN_DATA } from '../ScreensData/DATA';
+import { ANBIA_KI_DUAEN_DATA } from '../ScreensData/Data';
 
 export const AnbiaDuaScreen = ({ text }) => {
   const linkify = (text) => {
